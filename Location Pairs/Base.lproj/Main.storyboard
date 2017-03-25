@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,31 +22,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsg-n8-QUx">
-                                <rect key="frame" x="133" y="282" width="95" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nsg-n8-QUx">
+                                <rect key="frame" x="16" y="280" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zys-Ev-f4d"/>
+                                </constraints>
                                 <state key="normal" title="Regular Mode"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyB-oI-uc2">
-                                <rect key="frame" x="142" y="320" width="76" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kyB-oI-uc2">
+                                <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="thc-7x-5P8"/>
+                                </constraints>
                                 <state key="normal" title="Hard Mode"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCN-7u-KaI">
-                                <rect key="frame" x="138" y="358" width="85" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCN-7u-KaI">
+                                <rect key="frame" x="16" y="356" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="sKW-tX-Gdy"/>
+                                </constraints>
                                 <state key="normal" title="No Mistakes"/>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Location Pairs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6y-R9-3Z2">
-                                <rect key="frame" x="133" y="119" width="108" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Location Pairs" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6y-R9-3Z2">
+                                <rect key="frame" x="16" y="90" width="343" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="wHn-mf-bjp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mu1-HI-c37">
-                                <rect key="frame" x="137" y="402" width="87" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mu1-HI-c37">
+                                <rect key="frame" x="16" y="410" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Zu7-rE-3oX"/>
+                                </constraints>
                                 <state key="normal" title="Leaderboard"/>
                                 <connections>
                                     <segue destination="a97-El-WSe" kind="show" id="suq-dh-EjW"/>
@@ -53,6 +64,23 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="b6y-R9-3Z2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3Pa-Rp-vfF"/>
+                            <constraint firstItem="kyB-oI-uc2" firstAttribute="top" secondItem="nsg-n8-QUx" secondAttribute="bottom" constant="8" id="7v2-iL-aiX"/>
+                            <constraint firstItem="b6y-R9-3Z2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="7vt-DW-qLv"/>
+                            <constraint firstItem="yCN-7u-KaI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="BOe-FF-itY"/>
+                            <constraint firstItem="yCN-7u-KaI" firstAttribute="top" secondItem="kyB-oI-uc2" secondAttribute="bottom" constant="8" id="HzP-4p-oOm"/>
+                            <constraint firstItem="yCN-7u-KaI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Za3-tF-O4B"/>
+                            <constraint firstItem="kyB-oI-uc2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="aby-ob-zhi"/>
+                            <constraint firstItem="kyB-oI-uc2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="agy-rt-hsd"/>
+                            <constraint firstItem="nsg-n8-QUx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="cuy-QK-c6g"/>
+                            <constraint firstItem="kyB-oI-uc2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="du1-VV-dbu"/>
+                            <constraint firstItem="Mu1-HI-c37" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="hdf-tO-7y2"/>
+                            <constraint firstItem="b6y-R9-3Z2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="nsn-3K-DGK"/>
+                            <constraint firstItem="Mu1-HI-c37" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="pZi-e9-X34"/>
+                            <constraint firstItem="Mu1-HI-c37" firstAttribute="top" secondItem="yCN-7u-KaI" secondAttribute="bottom" constant="24" id="wgs-DV-y0q"/>
+                            <constraint firstItem="nsg-n8-QUx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xMQ-7A-gzG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Uu4-5o-Lm0"/>
                     <connections>
@@ -61,7 +89,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1073" y="89"/>
+            <point key="canvasLocation" x="-1074.4000000000001" y="88.605697151424295"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="yab-3d-sx0">
@@ -74,7 +102,35 @@
                     <view key="view" contentMode="scaleToFill" id="kfY-xL-gAY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7Bj-ji-OZE">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KzQ-U1-jyD">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ePn-nZ-LRW">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7Bj-ji-OZE" firstAttribute="top" secondItem="wQw-MV-Lor" secondAttribute="bottom" id="ROO-W2-9EU"/>
+                            <constraint firstItem="HOQ-P1-TOX" firstAttribute="top" secondItem="7Bj-ji-OZE" secondAttribute="bottom" id="fUX-dH-zaC"/>
+                            <constraint firstAttribute="trailing" secondItem="7Bj-ji-OZE" secondAttribute="trailing" id="o3c-hY-9sa"/>
+                            <constraint firstItem="7Bj-ji-OZE" firstAttribute="leading" secondItem="kfY-xL-gAY" secondAttribute="leading" id="wJs-hW-ckJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Cq0-Cc-Pw4">
                         <barButtonItem key="rightBarButtonItem" title="Leaderboard" id="IL1-3H-Imb">
@@ -86,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AW2-2L-bRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-354" y="89"/>
+            <point key="canvasLocation" x="-354.39999999999998" y="88.605697151424295"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="1Ir-FP-8s2">
@@ -99,19 +155,31 @@
                     <view key="view" contentMode="scaleToFill" id="ve3-mB-vDs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gkv-XT-aMB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gkv-XT-aMB" secondAttribute="trailing" id="6Yo-uD-dx4"/>
+                            <constraint firstItem="gkv-XT-aMB" firstAttribute="leading" secondItem="ve3-mB-vDs" secondAttribute="leading" id="CxL-Fs-uSR"/>
+                            <constraint firstItem="cAG-JH-4bB" firstAttribute="top" secondItem="gkv-XT-aMB" secondAttribute="bottom" id="YbR-ur-XIm"/>
+                            <constraint firstItem="gkv-XT-aMB" firstAttribute="top" secondItem="ve3-mB-vDs" secondAttribute="top" id="jah-p2-t9Z"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dhN-sE-N43" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-705" y="851"/>
+            <point key="canvasLocation" x="-706.39999999999998" y="850.52473763118451"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uRb-sH-ZGd">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xqZ-Vm-Ale" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NMh-bp-APX">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="NMh-bp-APX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>

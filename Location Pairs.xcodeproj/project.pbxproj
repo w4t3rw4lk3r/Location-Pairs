@@ -18,6 +18,10 @@
 		2E35D9851E86963200B2319E /* Location_PairsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35D9841E86963200B2319E /* Location_PairsTests.swift */; };
 		2E35D9901E86963200B2319E /* Location_PairsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35D98F1E86963200B2319E /* Location_PairsUITests.swift */; };
 		2E35D9A21E869E4C00B2319E /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35D9A11E869E4C00B2319E /* GlobalConstants.swift */; };
+		2E35D9A41E86A64500B2319E /* LeaderboardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E35D9A31E86A64500B2319E /* LeaderboardCell.xib */; };
+		2E35D9A61E86A65300B2319E /* LeaderboardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35D9A51E86A65300B2319E /* LeaderboardCellView.swift */; };
+		2E35D9A81E86A6DD00B2319E /* LocationCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E35D9A71E86A6DD00B2319E /* LocationCard.xib */; };
+		2E35D9AA1E86A6E700B2319E /* LocationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35D9A91E86A6E700B2319E /* LocationCardView.swift */; };
 		C7060CE815900A836CFE2E81 /* Pods_Location_PairsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635F91C9A758C5CDA7ADA5EC /* Pods_Location_PairsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +59,10 @@
 		2E35D98F1E86963200B2319E /* Location_PairsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location_PairsUITests.swift; sourceTree = "<group>"; };
 		2E35D9911E86963200B2319E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E35D9A11E869E4C00B2319E /* GlobalConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		2E35D9A31E86A64500B2319E /* LeaderboardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeaderboardCell.xib; sourceTree = "<group>"; };
+		2E35D9A51E86A65300B2319E /* LeaderboardCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardCellView.swift; sourceTree = "<group>"; };
+		2E35D9A71E86A6DD00B2319E /* LocationCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationCard.xib; sourceTree = "<group>"; };
+		2E35D9A91E86A6E700B2319E /* LocationCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCardView.swift; sourceTree = "<group>"; };
 		3935F9CE303F5CA20E4B6160 /* Pods-Location Pairs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Location Pairs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Location Pairs/Pods-Location Pairs.debug.xcconfig"; sourceTree = "<group>"; };
 		4DD01FCB2A361CB84262AAFB /* Pods-Location Pairs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Location Pairs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Location Pairs/Pods-Location Pairs.release.xcconfig"; sourceTree = "<group>"; };
 		4E3F1F09F0F460C42D0B3C24 /* Pods_Location_PairsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Location_PairsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +134,10 @@
 				2E35D9781E86963200B2319E /* LaunchScreen.storyboard */,
 				2E35D97B1E86963200B2319E /* Info.plist */,
 				2E35D9731E86963200B2319E /* Location_Pairs.xcdatamodeld */,
+				2E35D9A31E86A64500B2319E /* LeaderboardCell.xib */,
+				2E35D9A51E86A65300B2319E /* LeaderboardCellView.swift */,
+				2E35D9A71E86A6DD00B2319E /* LocationCard.xib */,
+				2E35D9A91E86A6E700B2319E /* LocationCardView.swift */,
 			);
 			path = "Location Pairs";
 			sourceTree = "<group>";
@@ -288,7 +300,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E35D9A81E86A6DD00B2319E /* LocationCard.xib in Resources */,
 				2E35D97A1E86963200B2319E /* LaunchScreen.storyboard in Resources */,
+				2E35D9A41E86A64500B2319E /* LeaderboardCell.xib in Resources */,
 				2E35D9771E86963200B2319E /* Assets.xcassets in Resources */,
 				2E35D9721E86963200B2319E /* Main.storyboard in Resources */,
 			);
@@ -454,8 +468,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E35D96F1E86963200B2319E /* ViewController.swift in Sources */,
+				2E35D9AA1E86A6E700B2319E /* LocationCardView.swift in Sources */,
 				2E35D96D1E86963200B2319E /* AppDelegate.swift in Sources */,
 				2E35D9A21E869E4C00B2319E /* GlobalConstants.swift in Sources */,
+				2E35D9A61E86A65300B2319E /* LeaderboardCellView.swift in Sources */,
 				2E35D9751E86963200B2319E /* Location_Pairs.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -709,6 +725,7 @@
 				2E35D9961E86963200B2319E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E35D9971E86963200B2319E /* Build configuration list for PBXNativeTarget "Location PairsTests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +734,7 @@
 				2E35D9991E86963200B2319E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E35D99A1E86963200B2319E /* Build configuration list for PBXNativeTarget "Location PairsUITests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +743,7 @@
 				2E35D99C1E86963200B2319E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

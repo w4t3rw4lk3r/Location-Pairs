@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="fOS-gy-pxz">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fOS-gy-pxz" id="fLP-3G-MtZ">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAx-4U-hBO">
+                        <rect key="frame" x="315" y="9" width="52" height="37"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="52" id="20B-2T-sal"/>
+                            <constraint firstAttribute="height" constant="37" id="2Ea-7j-QMX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.85699933770000003" green="0.32794710989999998" blue="0.3804852366" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HOW-Hb-l6m">
+                        <rect key="frame" x="8" y="9" width="299" height="37"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="wAx-4U-hBO" secondAttribute="trailing" constant="8" id="4uD-W1-u0N"/>
+                    <constraint firstItem="wAx-4U-hBO" firstAttribute="top" secondItem="fLP-3G-MtZ" secondAttribute="topMargin" constant="1" id="5eu-l2-fMw"/>
+                    <constraint firstItem="HOW-Hb-l6m" firstAttribute="top" secondItem="fLP-3G-MtZ" secondAttribute="topMargin" constant="1" id="Ede-Nb-rCA"/>
+                    <constraint firstItem="HOW-Hb-l6m" firstAttribute="leading" secondItem="fLP-3G-MtZ" secondAttribute="leadingMargin" id="PZO-Cl-C5F"/>
+                    <constraint firstItem="wAx-4U-hBO" firstAttribute="leading" secondItem="HOW-Hb-l6m" secondAttribute="trailing" constant="8" id="cBY-2e-MKb"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="HOW-Hb-l6m" secondAttribute="bottom" constant="1" id="fiq-aj-ijv"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="wAx-4U-hBO" secondAttribute="bottom" constant="1" id="rRV-eV-XBp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-186.5" y="-87"/>
+        </tableViewCell>
+    </objects>
+</document>
