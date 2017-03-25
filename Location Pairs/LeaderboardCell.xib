@@ -12,7 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="56" id="fOS-gy-pxz">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="leaderCell" rowHeight="56" id="fOS-gy-pxz" customClass="LeaderboardCellView" customModule="Location_Pairs" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fOS-gy-pxz" id="fLP-3G-MtZ">
@@ -46,6 +46,10 @@
                     <constraint firstAttribute="bottomMargin" secondItem="wAx-4U-hBO" secondAttribute="bottom" constant="1" id="rRV-eV-XBp"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="playerNameLabel" destination="HOW-Hb-l6m" id="ff3-go-2aj"/>
+                <outlet property="scoreLabel" destination="wAx-4U-hBO" id="7hE-op-Zrv"/>
+            </connections>
             <point key="canvasLocation" x="-186.5" y="-87"/>
         </tableViewCell>
     </objects>

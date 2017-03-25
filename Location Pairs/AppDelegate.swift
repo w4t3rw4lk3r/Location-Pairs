@@ -8,15 +8,31 @@
 
 import UIKit
 import CoreData
+import CoreLocation
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var locationManager =  CLLocationManager()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        locationManager.requestAlwaysAuthorization()
+
+        GMSPlacesClient.provideAPIKey(GlobalConstants.kGooglePlacesAPIKey)
+
+        //quick leaderboard save
+        var scoreboard:[[String: Any]] = []
+
+        scoreboard.append(["name":"Siri" as Any, "score":50])
+
+        let defaults = UserDefaults.standard
+        defaults.set(scoreboard, forKey:"scoreboardKey")
+
+
         return true
     }
 

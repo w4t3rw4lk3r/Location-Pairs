@@ -6,4 +6,13 @@
 //  Copyright © 2017 Joshua Areogun. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class LeaderboardCellView: UITableViewCell {
+
+    @IBOutlet weak var playerNameLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    override func awakeFromNib() {
+
+    }
+}

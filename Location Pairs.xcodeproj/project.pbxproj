@@ -22,6 +22,9 @@
 		2E35D9A61E86A65300B2319E /* LeaderboardCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35D9A51E86A65300B2319E /* LeaderboardCellView.swift */; };
 		2E35D9A81E86A6DD00B2319E /* LocationCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E35D9A71E86A6DD00B2319E /* LocationCard.xib */; };
 		2E35D9AA1E86A6E700B2319E /* LocationCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35D9A91E86A6E700B2319E /* LocationCardView.swift */; };
+		2E35D9AE1E86B05700B2319E /* LocationGameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35D9AD1E86B05700B2319E /* LocationGameEngine.swift */; };
+		2E35D9B01E86B22E00B2319E /* LocationGameGridCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35D9AF1E86B22E00B2319E /* LocationGameGridCollectionViewController.swift */; };
+		2E35D9B21E86B2CF00B2319E /* LeaderboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E35D9B11E86B2CF00B2319E /* LeaderboardViewController.swift */; };
 		C7060CE815900A836CFE2E81 /* Pods_Location_PairsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 635F91C9A758C5CDA7ADA5EC /* Pods_Location_PairsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +66,9 @@
 		2E35D9A51E86A65300B2319E /* LeaderboardCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardCellView.swift; sourceTree = "<group>"; };
 		2E35D9A71E86A6DD00B2319E /* LocationCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationCard.xib; sourceTree = "<group>"; };
 		2E35D9A91E86A6E700B2319E /* LocationCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCardView.swift; sourceTree = "<group>"; };
+		2E35D9AD1E86B05700B2319E /* LocationGameEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationGameEngine.swift; sourceTree = "<group>"; };
+		2E35D9AF1E86B22E00B2319E /* LocationGameGridCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationGameGridCollectionViewController.swift; sourceTree = "<group>"; };
+		2E35D9B11E86B2CF00B2319E /* LeaderboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeaderboardViewController.swift; sourceTree = "<group>"; };
 		3935F9CE303F5CA20E4B6160 /* Pods-Location Pairs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Location Pairs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Location Pairs/Pods-Location Pairs.debug.xcconfig"; sourceTree = "<group>"; };
 		4DD01FCB2A361CB84262AAFB /* Pods-Location Pairs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Location Pairs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Location Pairs/Pods-Location Pairs.release.xcconfig"; sourceTree = "<group>"; };
 		4E3F1F09F0F460C42D0B3C24 /* Pods_Location_PairsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Location_PairsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,8 +134,11 @@
 			children = (
 				2E35D96C1E86963200B2319E /* AppDelegate.swift */,
 				2E35D96E1E86963200B2319E /* ViewController.swift */,
+				2E35D9AD1E86B05700B2319E /* LocationGameEngine.swift */,
 				2E35D9A11E869E4C00B2319E /* GlobalConstants.swift */,
 				2E35D9701E86963200B2319E /* Main.storyboard */,
+				2E35D9B11E86B2CF00B2319E /* LeaderboardViewController.swift */,
+				2E35D9AF1E86B22E00B2319E /* LocationGameGridCollectionViewController.swift */,
 				2E35D9761E86963200B2319E /* Assets.xcassets */,
 				2E35D9781E86963200B2319E /* LaunchScreen.storyboard */,
 				2E35D97B1E86963200B2319E /* Info.plist */,
@@ -469,8 +478,11 @@
 			files = (
 				2E35D96F1E86963200B2319E /* ViewController.swift in Sources */,
 				2E35D9AA1E86A6E700B2319E /* LocationCardView.swift in Sources */,
+				2E35D9B21E86B2CF00B2319E /* LeaderboardViewController.swift in Sources */,
 				2E35D96D1E86963200B2319E /* AppDelegate.swift in Sources */,
+				2E35D9B01E86B22E00B2319E /* LocationGameGridCollectionViewController.swift in Sources */,
 				2E35D9A21E869E4C00B2319E /* GlobalConstants.swift in Sources */,
+				2E35D9AE1E86B05700B2319E /* LocationGameEngine.swift in Sources */,
 				2E35D9A61E86A65300B2319E /* LeaderboardCellView.swift in Sources */,
 				2E35D9751E86963200B2319E /* Location_Pairs.xcdatamodeld in Sources */,
 			);
